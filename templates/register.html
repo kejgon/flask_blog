@@ -27,12 +27,17 @@
 
             </div>
         </fieldset>
-        <div class="form-group mb-4">
-            {{ form.submit(class="form-control btn btn-primary") }}
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
         </div>
 
     </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already have an Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
 
+        </small>
+    </div>
 
 </div>
 {% endblock content%}
